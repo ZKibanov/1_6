@@ -1,17 +1,43 @@
-$bgColor: #24292e;
+$bgColor: #F8F8F8;
 $text: #fff;
+$headerTemp = 'X-Content-Type-Options: nosniff'; $this->headers[] = array($headerTemp, TRUE);
 
 @font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+    font-family: "TT Lakes";
+    src: url("../fonts/TTLakes-Regular.woff2") format("woff2"),
+    url('../fonts/TTLakes-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("../fonts/TTLakes-Bold.woff2") format("woff2"),
+    url('../fonts/TTLakes-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("../fonts/TTLakes-Medium.woff2") format("woff2"),
+    url('../fonts/TTLakes-Medium.woff') forheadermat('woff');
+    font-weight: 500;
+    font-style: normal;
 }
 
 body {
-  padding: 1rem;
+  padding: 0;
   margin: 0;
-  font-family: Comic, sans-serif;
+  font-family: TT Lakes;
   background-color: $bgColor;
   color: $text;
 }
+
+@import './article/article.css';
+@import './header-menu/header-menu.scss';
+@import './main-content/main-content.css';
+@import './nav/nav.css';
+@import './sidebar-menu/sidebar-menu.css';
+@import './brands/swiper__styles.css';
+
