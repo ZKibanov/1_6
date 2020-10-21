@@ -1,5 +1,3 @@
-import Swiper, { Pagination } from 'swiper';
-import 'swiper/swiper-bundle.css';
 
 const btnMore = document.querySelector('.brands__btn-more');
 let minimizer = document.querySelector('.brands-list_minimizer');

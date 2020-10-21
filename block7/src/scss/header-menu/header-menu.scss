@@ -16,6 +16,26 @@
     display: block;
     cursor: pointer;
 }
+.service-list {
+        display: flex;
+        width: 156px;
+    }
+
+.nav__link, .service-list__button--text-visible {
+    text-decoration: none;
+    color: #1B1C21;
+    display: block;
+}
+
+.button--repair-request {
+    background-image: url("./images/repair.svg");
+    margin-left:16px;
+}
+
+.button--status-request {
+    background-image: url("./images/checkstatus-1.svg");
+    margin-left:16px;
+}
 
 
 @media (min-width: 20px) and (max-width: 767px){
@@ -97,42 +117,50 @@
         padding: 14px 4px;
         position: relative;
         left: -20px;
-        top: -16px;
+        top: -24px;
+        margin-left: 32px;
     }
 
     .header__logo {
-        margin-left: 32px;
+        
     }
 }
 
 @media (min-width:1120px) {
-
+    
+    
     .body_desktop-positioner {
-        position:relative;
         margin: 0 auto;
         max-width: 1120px;
-    }
-    
-      .nav__list {
-        flex-wrap: wrap;
-        overflow-x:hidden;
     }
 
     .header__contact-list, .header__menu-btn, .logo {
         display: none;
     }
 
+    .article {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav__list {
+        flex-wrap: wrap;
+        overflow-x:hidden;
+    }
 
     .header {
         display: flex;
     }
 
+    .main__title {
+        width: 400px;
+          }
+
     .header__service-list {
         position: absolute;
         right: 0;
-        top:-15px;
         display: flex;
-        width: 520px;
+        width: 500px;
     }
 
     .button--repair-request {
@@ -167,25 +195,28 @@
         font-weight: 500;
     }
 
-
+   
+    
+    .nav {
+    white-space: nowrap;
+    margin: 16px auto;
 }
 
-    .header {
-            background: white;
-            max-height: 88px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap:nowrap;
-            border-bottom: 1px solid #41F6D7;
-        }
-
-    .service-list {
-        display: flex;
-        width: 156px;
+    .article__content--positioner {
+        min-width: 45%;
     }
 
+    .article__image {
+        min-width: 45%;
+    }
 
+    .article__image-pic {
+        border-radius: 10px;
+    }
+    
+    
+
+}
 
 
     .service-list::before {

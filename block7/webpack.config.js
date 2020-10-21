@@ -42,7 +42,7 @@ module.exports = {
           'sass-loader', // compiles Sass to CSS, using Node Sass by default
         ],
       },
-
+ 
       // Подключаем шрифты из css
       {
         test: /\.(eot|ttf|woff|woff2)$/,
@@ -51,6 +51,12 @@ module.exports = {
             loader: 'file-loader?name=./fonts/[name].[ext]'
           },
         ]
+      },
+      
+      //exp
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
       },
 
       // Подключаем картинки из css

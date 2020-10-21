@@ -12,6 +12,8 @@ img {
     object-fit: cover;
 }
 
+
+
 .brands-list__header-name {
     font-family: "TT Lakes", "Arial", "Roboto Light",sans-serif ;
     font-weight: 400;
@@ -31,7 +33,7 @@ img {
     width: 100%;
     border-top: 1px solid #D9FFF5;
     padding:16px;
-
+    box-sizing:border-box;
 }
 
 .brands-list--container {
@@ -40,23 +42,6 @@ img {
     padding:0;
 }
 
-/*.btn-more {
-    font-family: "TT Lakes", "Arial", "Roboto Light",sans-serif ;
-    display: block;
-    cursor: pointer;
-    background-image: url("./images/expand.svg");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-color: transparent;
-    padding-left: 24px;
-    vertical-align: bottom;
-    font-size: 16px;
-    font-weight: 500;
-    border: none;
-    transition-duration: 1s;
-    margin: 12px;
-}
-*/
 .btn-more_opened {
     background-image: url("./images/expand2.svg");
 }
