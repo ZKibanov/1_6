@@ -74,7 +74,7 @@
     }
 }    
 
-@media (min-width: 768px) and (max-width: 1119px) {
+@media (min-width: 768px) and (max-width: 1439px) {
     .header {
         background: white;
         max-height: 88px;
@@ -126,12 +126,12 @@
     }
 }
 
-@media (min-width:1120px) {
+@media (min-width:1440px) {
     
     
     .body_desktop-positioner {
         margin: 0 auto;
-        max-width: 1120px;
+        max-width: 1440px;
     }
 
     .header__contact-list, .header__menu-btn, .logo {
@@ -150,6 +150,12 @@
 
     .header {
         display: flex;
+        margin-left:320px;
+    }
+    
+    .main-content {
+    margin-left:320px;
+    position:relative;
     }
 
     .main__title {

@@ -54,7 +54,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1119px) {
+@media (min-width: 768px) and (max-width: 1439px) {
 
     .article {
         display: flex;
@@ -74,7 +74,7 @@
     }
 }
 
-@media (min-width:1120px) {
+@media (min-width:1440px) {
 
     .article {
         display: flex;

@@ -26,33 +26,20 @@ visually:hidden;
 
 }
 
-@media (min-width: 20px) and (max-width: 767px) {
+.button--close {
+    background-image: url("./images/close.svg");
+}
 
-    .sidebar-menu-body {
-        z-index:1;
-        width: 100%;
-    }
+.button {
+    border: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: block;
+    cursor: pointer;
 }
-@media (min-width: 768px) and (max-width: 1119px) {
 
-    .sidebar-menu-body {
-            width: 320px;
-        }
-    }
-    
-@media (min-width:1120px){
-.sidebar-menu-body {
-    position:absolute;
-    width: 320px;
-    }
-    
-.sidebar-menu-body--hidden {
-position: absolute;
-top:-180%;
-left:0;
-visually:hidden;
-}
-}
 .sidebar-menu-body{
     font-family: "TT Lakes", "Arial", "Roboto Light",sans-serif ;
     font-weight: 400;
@@ -69,6 +56,50 @@ visually:hidden;
   transition-duration: 0.5s;
   transition-property: all;
 }
+
+@media (min-width: 20px) and (max-width: 767px) {
+
+    .sidebar-menu-body {
+        z-index:1;
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+
+    .sidebar-menu-body {
+            width: 320px;
+        }
+    }
+    
+@media (min-width:1440px){
+.sidebar-menu-body {
+    position:absolute;
+    width: 320px;
+    position: absolute;
+top:0;
+left:0;
+
+    }
+    
+.sidebar-menu-body--hidden {
+position: absolute;
+top:0;
+left:0;
+}
+
+.sidebar-menu-body{
+box-shadow:none;
+
+}
+
+.button--close.button {
+display:none;
+visibility:hidden;
+}
+
+}
+
+
 
 .sidebar-menu__header {
     margin: 0;
@@ -147,15 +178,7 @@ visually:hidden;
 }
 
 
-.button {
-    border: 0;
-    background-color: transparent;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px;
-    display: block;
-    cursor: pointer;
-}
+
 
 .button--phone {
     background-image: url("./images/phone.svg");
@@ -173,9 +196,7 @@ visually:hidden;
 .contact-list__button {
     margin-left:16px;
 }
-.button--close {
-    background-image: url("./images/close.svg");
-}
+
 
 .button--search {
     margin-left:auto;

@@ -1,91 +1,168 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%= htmlWebpackPlugin.options.title %></title>
-</head>
+  </head>
   <body class="body">
-    <div class="sidebar-menu-body sidebar-menu-body--hidden">
-      <div class="sidebar-menu__header">
-        <button class="menu__header-btn button--close button"></button>
-        <div class="logo menu-header__logo">
-          <a href="/" class="logo__link"
-            ><img
-              class="logo__image"
-              src="./img/Group.svg"
-              width="98"
-              height="52"
-              alt="Logo"
-          /></a>
-        </div>
-        <button class="menu__header-btn button--search button"></button>
+    <div class="modal-call modal-call__hidden">
+      <button class="modal-call-button-close button"></button>
+      <div class="title_positioner">
+        <h1 class="modal__title title">Заказать звонок</h1>
       </div>
-      <nav class="menu__list_positioner">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="/" class="menu__link">Ремонт техники</a>
-          </li>
-          <li class="menu__item">
-            <a href="/" class="menu__link">Услуги и сервисы</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Корпоративным клиентам</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Продавцам техники</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Партнерам</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Производителям</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Наши сервисные центры</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="contact-list">
-        <li class="contact-list__item">
-          <button class="button--phone contact-list__button button"></button>
-        </li>
-        <li class="contact-list__item">
-          <button class="button--chat contact-list__button button"></button>
-        </li>
-        <li class="contact-list__item">
-          <a href="#" class="button--contacts contact-list__button button"></a>
-        </li>
-      </ul>
-      <span class="menu__email-address"
-        ><a href="mailto: mail@cps.com" class="email-address"
-          >mail@cps.com</a
-        ></span
-      >
-      <span class="menu__phone-number"
-        ><a href="tel:8 800 890 8900" class="phone-number"
-          >8 800 890 8900</a
-        ></span
-      >
-      <ul class="language-panel">
-        <li class="language-panel__item chosen">
-          <a href="/" class="language-panel__link">RU</a>
-        </li>
-        <li class="language-panel__item">
-          <a href="/" class="language-panel__link">EN</a>
-        </li>
-        <li class="language-panel__item">
-          <a href="/" class="language-panel__link">CH</a>
-        </li>
-      </ul>
+      <form class="form-contact" action="" method="post">
+        <input
+          id=""
+          type="tel"
+          class="phone-request-field form-field"
+          placeholder="Телефон"
+        />
+        <p class="form-contact__paragraph">
+          Нажимая "отправить",вы даете согласие на<a
+            class="personal-data-link"
+            href=""
+          >
+            обработку персональных данных </a
+          >и соглашаетесь с нашей
+          <a class="confidential-politics-link" href="">
+            политикой конфиденциальности</a
+          >
+        </p>
+        <button class="form-call__sbm-btn" type="submit"></button>
+      </form>
+    </div>
+
+    <div class="modal-contact modal-contact__hidden">
+      <button class="modal-contacts-button-close button--close button"></button>
+      <div class="title_positioner">
+        <h1 class="form-contact__title title">Обратная связь</h1>
+      </div>
+      <form class="form-contact" action="" method="post">
+        <input
+          id=""
+          type="text"
+          class="name-request-field form-field"
+          placeholder="Имя"
+        />
+        <input
+          id=""
+          type="tel"
+          class="phone-request-field form-field"
+          placeholder="Телефон"
+        />
+        <input
+          id=""
+          type="email"
+          class="email-request-field form-field"
+          placeholder="Электронная почта"
+        />
+        <textarea
+          id=""
+          class="message-field form-field"
+          cols="30"
+          rows="10"
+          placeholder="Сообщение"
+        ></textarea>
+        <p class="form-contact__paragraph">
+          Нажимая "отправить",вы даете согласие на<a
+            class="personal-data-link"
+            href=""
+          >
+            обработку персональных данных </a
+          >и соглашаетесь с нашей
+          <a class="confidential-politics-link" href="">
+            политикой конфиденциальности</a
+          >
+        </p>
+        <button class="form-contact__sbm-btn" type="submit"></button>
+      </form>
     </div>
 
     <div class="body_desktop-positioner">
+      <div class="sidebar-menu-body sidebar-menu-body--hidden">
+        <div class="sidebar-menu__header">
+          <button class="sidebar-menu-btn button--close button"></button>
+          <div class="logo menu-header__logo">
+            <a href="/" class="logo__link"
+              ><img
+                class="logo__image"
+                src="./img/Group.svg"
+                width="98"
+                height="52"
+                alt="Logo"
+            /></a>
+          </div>
+          <button class="menu__header-btn button--search button"></button>
+        </div>
+        <nav class="menu__list_positioner">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="/" class="menu__link">Ремонт техники</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link">Услуги и сервисы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Корпоративным клиентам</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Продавцам техники</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Партнерам</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Производителям</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Наши сервисные центры</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact-list">
+          <li class="contact-list__item">
+            <button class="button--phone contact-list__button button"></button>
+          </li>
+          <li class="contact-list__item">
+            <button class="button--chat contact-list__button button"></button>
+          </li>
+          <li class="contact-list__item">
+            <a
+              href="#"
+              class="button--contacts contact-list__button button"
+            ></a>
+          </li>
+        </ul>
+        <span class="menu__email-address"
+          ><a href="mailto: mail@cps.com" class="email-address"
+            >mail@cps.com</a
+          ></span
+        >
+        <span class="menu__phone-number"
+          ><a href="tel:8 800 890 8900" class="phone-number"
+            >8 800 890 8900</a
+          ></span
+        >
+        <ul class="language-panel">
+          <li class="language-panel__item chosen">
+            <a href="/" class="language-panel__link">RU</a>
+          </li>
+          <li class="language-panel__item">
+            <a href="/" class="language-panel__link">EN</a>
+          </li>
+          <li class="language-panel__item">
+            <a href="/" class="language-panel__link">CH</a>
+          </li>
+        </ul>
+      </div>
       <header class="header">
         <button class="header__menu-btn button--menu button"></button>
         <div class="logo header__logo">
@@ -129,7 +206,7 @@
         </ul>
       </header>
 
-      <main>
+      <main class="main-content">
         <h1 class=".main-content__title title">Услуги и сервисы</h1>
         <nav class="main__nav nav">
           <ul class="nav__list">
