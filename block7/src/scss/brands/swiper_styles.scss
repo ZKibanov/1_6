@@ -81,7 +81,7 @@ img {
 
 }
 
-@media (min-width: 768px) and (max-width: 1119px) {
+@media (min-width: 768px) and (max-width: 1439px) {
     .brands-list {
         display: flex;
         flex-wrap: wrap;
@@ -97,7 +97,7 @@ img {
     }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1440px) {
     .brands-list {
         max-width: 1120px;
         display: flex;
@@ -114,7 +114,7 @@ img {
     }
 }
 
-.button {
+/*.button {
     border: 0;
     background-color: transparent;
     background-position: center;
@@ -122,9 +122,16 @@ img {
     padding: 20px;
     display: block;
     cursor: pointer;
-}
+}*/
 
 .brands-list__button {
+    border: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: block;
+    cursor: pointer;
     background-image: url("./images/go.svg");
 }
 
