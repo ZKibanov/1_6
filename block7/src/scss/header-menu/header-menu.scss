@@ -119,11 +119,9 @@
         left: -20px;
         top: -24px;
         margin-left: 32px;
+        z-index: 0;
     }
 
-    .header__logo {
-        
-    }
 }
 
 @media (min-width:1440px) {
@@ -237,6 +235,7 @@
 .header__logo {
     margin: 10px 16px 0 0;
 }
+
 
 @import './header-menu/__service-list/__service-list.css';
 @import './header-menu/__contact-list/__contact-list.css';

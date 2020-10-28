@@ -11,6 +11,7 @@ li {
     position:absolute;
     top:0;
     left:0;
+    z-index: 100;
 }
 
 .sidebar-menu-body  {
@@ -63,6 +64,12 @@ visually:hidden;
         z-index:1;
         width: 100%;
     }
+
+    .sidebar-menu__logo {
+        padding: 0 16px;
+        display: block;
+    }
+    
 }
 @media (min-width: 768px) and (max-width: 1439px) {
 
@@ -70,15 +77,21 @@ visually:hidden;
             width: 320px;
         }
     }
+
+    .sidebar-menu__logo {
+        padding: 0 16px;
+        display: block;
+    }
+    
     
 @media (min-width:1440px){
 .sidebar-menu-body {
     position:absolute;
     width: 320px;
     position: absolute;
-top:0;
-left:0;
-
+    top:0;
+    left:0;
+    box-shadow:none;
     }
     
 .sidebar-menu-body--hidden {
@@ -87,14 +100,14 @@ top:0;
 left:0;
 }
 
-.sidebar-menu-body{
-box-shadow:none;
 
+.sidebar-menu-btn.button--close.button {
+display:none;
 }
 
-.button--close.button {
-display:none;
-visibility:hidden;
+.sidebar-menu__logo {
+    padding: 0 16px;
+    display: block;
 }
 
 }
@@ -238,6 +251,10 @@ visibility:hidden;
 .menu__email-address {
     margin-top: 16px;
     margin-left: 16px;
+}
+
+sidebar-menu-logo__link {
+    display: block;
 }
 
 

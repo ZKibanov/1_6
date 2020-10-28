@@ -1,6 +1,7 @@
 const btnMore = document.querySelector('.brands__btn-more ');
 let minimizer = document.querySelector('.brands-list_minimizer');
 const mediaQueryList = window.matchMedia('(min-width: 768px)');
+let mySwiper;
 import Swiper, { Pagination } from 'swiper';
 Swiper.use([Pagination]);
  btnMore.addEventListener('click', function () {
@@ -15,7 +16,7 @@ Swiper.use([Pagination]);
 })
 
 const enableSwiper = function() {
-    let mySwiper = new Swiper('.swiper-container', {
+    mySwiper = new Swiper('.swiper-container', {
         slidesPerView: 2,
         spaceBetween: 16,
         pagination: {
@@ -24,12 +25,13 @@ const enableSwiper = function() {
             clickable: true,
         },
     });
-    mySwiper.init();
+    mySwiper.init();  
 }
 
 let swiperRequest = function (a) {
     if (( a.matches ) && (mySwiper!==undefined)) {
-        mySwiper.destroy(true, true)
+        mySwiper.destroy(true, true);
+        console.log('lkj;lkjl;k');
     } else if (a.matches) {
         console.log(mySwiper)
         return ;
@@ -40,8 +42,8 @@ let swiperRequest = function (a) {
 
 swiperRequest(mediaQueryList);
 
-mediaQueryList.onchange = function (a) {
-    swiperRequest(a);
+mediaQueryList.onchange = function (mediaQueryList) {
+    swiperRequest(mediaQueryList);
 }
 
 

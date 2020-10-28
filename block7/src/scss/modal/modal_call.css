@@ -1,5 +1,6 @@
 
 .modal-call {
+    z-index: 10;
 position:relative;
 box-sizing: border-box;
 width:440px;
@@ -69,7 +70,7 @@ margin:32px auto 32px 16px;
 padding:0;
 }
 
-.title::before {
+.modal__title::before {
 content:"";
 height: 40px;
 width: 3px;
