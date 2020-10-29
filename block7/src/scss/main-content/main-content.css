@@ -13,6 +13,5 @@ font-size: 28px;
     background-image: url("./images/highlight.svg");
     background-repeat: no-repeat;
     padding-left: 16px;
-    margin-left: 0;
-    margin-bottom: 0;
+    margin:20px 0;
 }

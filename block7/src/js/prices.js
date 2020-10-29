@@ -48,31 +48,7 @@ mediaQueryList.onchange = function (a) {
     swiperRequest(mediaQueryList);
 
 }
-    /*swipers.forEach((el) => {
-    el = new Swiper(el, {
-        slidesPerView: 2,
-        spaceBetween: 16,
-        pagination: {
-            el: el.querySelector('.swiper-pagination'),
-            type: 'bullets',
-            clickable: true
-        }
-    });
-})
-}
 
-let swiperRequest = function (MQL) {
-if (MQL.matches) {
-swipers.forEach ((el) =>{
-    if (Swiper!==undefined){Swiper.destroy(true, true)};
-}
-
-)
-} else {
-    enableSwiper();
-    console.log('1')
-}
-}*/
 
 
 

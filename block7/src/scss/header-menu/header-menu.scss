@@ -1,6 +1,6 @@
 .button--menu {
     margin: 0 16px;
-    background-image: url("./images/burger.svg");
+    background-image: url("../img/burger.svg");
 }
 
     .service-list__button--text-visible {
@@ -28,13 +28,27 @@
 }
 
 .button--repair-request {
-    background-image: url("./images/repair.svg");
+    background-image: url("../img/repair.svg");
     margin-left:16px;
 }
 
 .button--status-request {
-    background-image: url("./images/checkstatus-1.svg");
+    background-image: url("../img/checkstatus-1.svg");
     margin-left:16px;
+}
+
+.footer {
+    border-top: 1px solid #D9FFF5;
+    padding: 25px 0 32px 0;
+    display:flex;
+    justify-content: space-between;
+    margin:50px auto 0 auto;
+    padding:12px;
+}
+.footer_team,.footer_policy,.footer_info {
+    color:#7E7E82;
+    font-family: TT Lakes;
+    width: 30%;
 }
 
 
@@ -66,7 +80,7 @@
 
     .service-list::before {
         content: '';
-        background-image: url("./images/divider.svg");
+        background-image: url("../img/divider.svg");
         padding: 16px 2px;
         position: relative;
         background-position: center;
@@ -106,14 +120,14 @@
 
     .header__service-list::before {
         content: '';
-        background: center no-repeat url("./images/divider.svg");
+        background: center no-repeat url("../img/divider.svg");
         padding: 16px 4px;
         margin-right: 16px;
     }
 
     .header__logo::before {
         content: '';
-        background: center no-repeat url("./images/divider.svg");
+        background: center no-repeat url("../img/divider.svg");
         padding: 14px 4px;
         position: relative;
         left: -20px;
@@ -129,7 +143,10 @@
     
     .body_desktop-positioner {
         margin: 0 auto;
-        max-width: 1440px;
+        position: relative;
+        width: 1440px;
+        border:2px solid black;
+
     }
 
     .header__contact-list, .header__menu-btn, .logo {
@@ -147,13 +164,16 @@
     }
 
     .header {
-        display: flex;
+        display: block;
         margin-left:320px;
+        width:1120px;
+        position:relative;
     }
     
     .main-content {
-    margin-left:320px;
-    position:relative;
+        max-width: 1120px;
+        margin-left:320px;
+        position:relative;
     }
 
     .main__title {
@@ -163,12 +183,17 @@
     .header__service-list {
         position: absolute;
         right: 0;
+        top:-5px;
         display: flex;
         width: 500px;
     }
 
+    .main-content {
+        margin-top: 50px;
+    }
+
     .button--repair-request {
-        background-image: url("./images/repair.svg");
+        background-image: url("../img/repair.svg");
         background-position: right;
         padding-right: 50px;
         margin-right: 32px;
@@ -176,10 +201,11 @@
         font-size: 16px;
         font-family: "TT Lakes", "Arial", "Roboto Light", sans-serif;
         font-weight: 500;
+
     }
 
     .button--status-request {
-        background-image: url("./images/checkstatus-1.svg");
+        background-image: url("../img/checkstatus-1.svg");
         background-position: right;
         padding-right: 50px;
         margin-right: 32px;
@@ -197,6 +223,7 @@
         font-size: 16px;
         font-family: "TT Lakes", "Arial", "Roboto Light", sans-serif;
         font-weight: 500;
+        
     }
 
    
@@ -204,7 +231,7 @@
     .nav {
     white-space: nowrap;
     margin: 16px auto;
-}
+    }
 
     .article__content--positioner {
         min-width: 45%;
@@ -223,18 +250,41 @@
 }
 
 
-    .service-list::before {
-        content: '';
-        background-image: url("./images/divider.svg");
-        padding: 16px 2px;
-        position: relative;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+
 
 .header__logo {
     margin: 10px 16px 0 0;
 }
+
+.offer-info {
+    color:#1B1C21;
+    margin:16px;
+    font-family: TT Lakes;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: left;  
+}
+
+.offer-link {
+    margin:16px;
+    font-family: TT Lakes;
+    font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0.2px;
+text-align: left;
+color:#1B1C21;
+}
+
+.offer-link::after{
+    content:'';
+    padding:10px;
+    background-image: url("../img/line.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
 
 
 @import './header-menu/__service-list/__service-list.css';

@@ -42,6 +42,22 @@ img {
     padding:0;
 }
 
+.brands-list__link {
+    box-sizing: border-box;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    display:flex;
+    justify-content: flex-end;
+    padding: 0 12px;
+    height:72px;
+    width: 224px;
+    background-repeat: no-repeat;
+    background-position: 15% 50%;
+    background-color: white;
+    margin-left: 32px;
+    margin-top: 24px;
+}
+
 .btn-more_opened {
     background-image: url("./images/expand2.svg");
 }
@@ -51,16 +67,17 @@ img {
         display: none;
     }
 
-    .swiper-container {
+    .brands-list_container.swiper-container {
         width:460px;
         padding: 0;
         position: relative;
-        margin-left:16px;
+        margin:0 auto 0 16px;
+        max-height:140px;
     }
 
     .swiper-pagination {
         position:absolute;
-        left:16px;
+        left:0;
     }
 
     .swiper-pagination-bullet {
@@ -77,6 +94,10 @@ img {
         display: block;
         box-sizing: border-box;
         margin: 0;
+    }
+
+    .brands-list__link {
+        margin-top: 16px;
     }
 
 }
@@ -145,21 +166,6 @@ img {
     width: 250px;
 }
 
-.brands-list__link {
-    box-sizing: border-box;
-    border: 1px solid #EAEAEA;
-    border-radius: 6px;
-    display:flex;
-    justify-content: flex-end;
-    padding: 0 12px;
-    height:72px;
-    width: 224px;
-    background-repeat: no-repeat;
-    background-position: 15% 50%;
-    background-color: white;
-    margin-left: 32px;
-    margin-top: 32px;
-}
 
 
 
