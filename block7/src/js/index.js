@@ -9,6 +9,7 @@ import './modal_call.js';
 import Swiper, { Pagination } from 'swiper';
 Swiper.use([Pagination]);
 import './swiper1.js';
+import './prices.js';
 /*
 const mySwiper = new Swiper('.swiper-container',{
         slidesPerView: 2,

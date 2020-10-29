@@ -144,7 +144,7 @@ background-image:url("./images/form_submit.svg");
 }
 
 .modal-contacts-button-close {
-    background-image: url("./images/close.svg");
+    background-image: url("../../img/close.svg");
     border: 0;
     background-color: transparent;
     background-position: center;

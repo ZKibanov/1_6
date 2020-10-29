@@ -1,9 +1,6 @@
 const btnMore = document.querySelector('.brands__btn-more ');
 let minimizer = document.querySelector('.brands-list_minimizer');
-const mediaQueryList = window.matchMedia('(min-width: 768px)');
-let mySwiper;
-import Swiper, { Pagination } from 'swiper';
-Swiper.use([Pagination]);
+
  btnMore.addEventListener('click', function () {
     btnMore.classList.toggle('btn-more_opened');
     minimizer.classList.toggle('brands-list_minimized');
@@ -15,7 +12,7 @@ Swiper.use([Pagination]);
     }
 })
 
-const enableSwiper = function() {
+/*const enableSwiper = function() {
     mySwiper = new Swiper('.swiper-container', {
         slidesPerView: 2,
         spaceBetween: 16,
@@ -45,6 +42,6 @@ swiperRequest(mediaQueryList);
 mediaQueryList.onchange = function (mediaQueryList) {
     swiperRequest(mediaQueryList);
 }
-
+*/
 
 
