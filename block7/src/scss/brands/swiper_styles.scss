@@ -1,3 +1,4 @@
+$borders:#D9FFF5;
 
 a {
     text-decoration: none;
@@ -31,7 +32,7 @@ img {
     color:#7E7E82;
     background-image: linear-gradient( to right,#F2F2F2, #FFF);
     width: 100%;
-    border-top: 1px solid #D9FFF5;
+    border-top: 1px solid $borders;
     padding:16px;
     box-sizing:border-box;
 }
@@ -39,7 +40,6 @@ img {
 .brands-list--container {
     background-color: #F2F2F2;
     margin:0;
-    padding:0;
 }
 
 .brands-list__link {
@@ -68,10 +68,10 @@ img {
     }
 
     .brands-list_container.swiper-container {
-        width:460px;
+        width:90vw;
         padding: 0;
         position: relative;
-        margin:0 auto 0 16px;
+        margin:0 auto;
         max-height:140px;
     }
 
@@ -91,6 +91,7 @@ img {
     
     .brands-list__item {
         min-width: 224px;
+        max-width: 224px;
         display: block;
         box-sizing: border-box;
         margin: 0;
@@ -106,6 +107,11 @@ img {
     .brands-list {
         display: flex;
         flex-wrap: wrap;
+
+    }
+
+    .brands-list--container {
+        padding:0 0 50px 0;
     }
 
     .brands-list_minimized{
@@ -133,17 +139,11 @@ img {
     .swiper-pagination {
         display: none;
     }
-}
 
-/*.button {
-    border: 0;
-    background-color: transparent;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px;
-    display: block;
-    cursor: pointer;
-}*/
+    .brands-list--container {
+        padding:0 0 50px 0;
+    }
+}
 
 .brands-list__button {
     border: 0;

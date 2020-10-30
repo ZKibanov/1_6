@@ -1,3 +1,5 @@
+$text: #1B1C21;
+
 .article__image {
     margin: 16px;
 }
@@ -9,7 +11,7 @@
  .article__image {
         min-width: 100%;
         height: auto;
-        margin: auto -16px;
+        margin: auto 16px;
 }
 
     
@@ -17,8 +19,8 @@
     font-size: 14px;
     line-height: 18px;
     /* or 143% */
-    color: #1B1C21;
-    margin: 0 16px;
+    color: $text;
+    margin: 0 16px 32px 16px;
 }
 
 .article__image-pic {
@@ -30,15 +32,22 @@
     font-family: "TT Lakes", "Arial", "Roboto Light", sans-serif;
     display: block;
     cursor: pointer;
-    background-image: url("./images/expand.svg");
+    background-image: url("../img/expand.svg");
     background-repeat: no-repeat;
     background-position: left;
     background-color: transparent;
     padding-left: 24px;
-    vertical-align: bottom;
     font-size: 16px;
     font-weight: 500;
     border: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.article__content {
+    margin-bottom: 20px;
 }
 
 @media (min-width: 20px) and (max-width: 767px){

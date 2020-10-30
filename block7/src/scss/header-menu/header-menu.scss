@@ -1,8 +1,18 @@
+$bgColor: #F8F8F8;
+$text: #1B1C21;
+$borders:#D9FFF5;
+$bottomBorders:#41F6D7;
+$footer:#7E7E82;
+$headerAndMenus:#fff;
+
 .button--menu {
     margin: 0 16px;
     background-image: url("../img/burger.svg");
 }
 
+.nav__list{
+    margin-bottom: 16px;
+}
     .service-list__button--text-visible {
         font-size: 0;
     }
@@ -23,7 +33,7 @@
 
 .nav__link, .service-list__button--text-visible {
     text-decoration: none;
-    color: #1B1C21;
+    color: $text;
     display: block;
 }
 
@@ -38,7 +48,7 @@
 }
 
 .footer {
-    border-top: 1px solid #D9FFF5;
+    border-top: 1px solid $borders;
     padding: 25px 0 32px 0;
     display:flex;
     justify-content: space-between;
@@ -46,9 +56,10 @@
     padding:12px;
 }
 .footer_team,.footer_policy,.footer_info {
-    color:#7E7E82;
+    color:$footer;
     font-family: TT Lakes;
     width: 30%;
+    padding:10px;
 }
 
 
@@ -56,13 +67,13 @@
    
 
     .header {
-            background: white;
+            background:$headerAndMenus;
             max-height: 88px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap:nowrap;
-            border-bottom: 1px solid #41F6D7;
+            border-bottom: 1px solid $bottomBorders;
         }
 
     .header__contact-list {
@@ -86,16 +97,28 @@
         background-position: center;
         background-repeat: no-repeat;
     }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer_team,.footer_policy,.footer_info {
+        color:$footer;
+        font-family: TT Lakes;
+        width: 90%;
+        padding:10px;
+        text-align: center;
+    }
 }    
 
 @media (min-width: 768px) and (max-width: 1439px) {
     .header {
-        background: white;
+        background: $headerAndMenus;
         max-height: 88px;
         display: flex;
         align-items: center;
         flex-wrap:nowrap;
-        border-bottom: 1px solid #41F6D7;
+        border-bottom: 1px solid $bottomBorders;
         justify-content: flex-end;
     }
 
@@ -136,6 +159,10 @@
         z-index: 0;
     }
 
+    .blur {
+        filter:blur 15px;
+    }
+
 }
 
 @media (min-width:1440px) {
@@ -145,8 +172,6 @@
         margin: 0 auto;
         position: relative;
         width: 1440px;
-        border:2px solid black;
-
     }
 
     .header__contact-list, .header__menu-btn, .logo {
@@ -183,15 +208,15 @@
     .header__service-list {
         position: absolute;
         right: 0;
-        top:-5px;
+        top:55px;
         display: flex;
         width: 500px;
     }
 
     .main-content {
-        margin-top: 50px;
+       padding-top: 50px;
     }
-
+    
     .button--repair-request {
         background-image: url("../img/repair.svg");
         background-position: right;
@@ -257,7 +282,7 @@
 }
 
 .offer-info {
-    color:#1B1C21;
+    color:$text;
     margin:16px;
     font-family: TT Lakes;
     font-size: 14px;
@@ -274,7 +299,7 @@ font-size: 16px;
 line-height: 24px;
 letter-spacing: -0.2px;
 text-align: left;
-color:#1B1C21;
+color:$text;
 }
 
 .offer-link::after{

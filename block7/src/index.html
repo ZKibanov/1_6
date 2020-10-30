@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -10,6 +10,7 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body class="body">
+  <div class="modal-call__screen modal-call__screen_hidden">
     <div class="modal-call modal-call__hidden">
       <button class="modal-call-button-close button--close button"></button>
       <div class="title_positioner">
@@ -36,7 +37,8 @@
         <button class="form-call__sbm-btn" type="submit"></button>
       </form>
     </div>
-
+  </div>
+  <div class="modal-contact__screen modal-contact__screen_hidden">
     <div class="modal-contact modal-contact__hidden">
       <button class="modal-contacts-button-close button--close button"></button>
       <div class="title_positioner">
@@ -82,6 +84,7 @@
         <button class="form-contact__sbm-btn" type="submit"></button>
       </form>
     </div>
+  </div>
 
     <div class="body_desktop-positioner">
       <div class="sidebar-menu-body sidebar-menu-body--hidden">
@@ -105,7 +108,7 @@
               <a href="/" class="menu__link">Ремонт техники</a>
             </li>
             <li class="menu__item">
-              <a href="/" class="menu__link">Услуги и сервисы</a>
+              <a href="/" class="menu__link menu__link--active">Услуги и сервисы</a>
             </li>
             <li class="menu__item">
               <a href="#" class="menu__link">Корпоративным клиентам</a>
@@ -163,6 +166,7 @@
           </li>
         </ul>
       </div>
+      <div class="sidebar-menu--blur">
       <header class="header">
         <button class="header__menu-btn button--menu button"></button>
         <div class="logo header__logo">
@@ -239,7 +243,7 @@
                   ноутбук Dell с официальной гарантией производителя.
                 </p>
               </div>
-              <div class="article__hidden-text">
+              <div class="article__hidden-text hidden">
                 <p class="article__content-text">
                   Мы успешно работаем с 1992 года и заслужили репутацию
                   надежного партнера, что подтверждает большое количество
@@ -466,13 +470,13 @@
     <p class="offer-info">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
     <a href="" class="offer-link">Получить коммерческое предложение</a>
     <footer class="footer">
-      <p class="footer_team">© 2019 CPS
+      <p class="footer_team">© 2019 CPS<br>
         Разработано командой Apesong </p>
         <p class="footer_policy">Политика конфиденциальности</p>
         <p class="footer_info">Информация, размещенная на данной странице, не является публичной офертой</p>
           </footer>
       </main>
-   
+    </div>
     </div>
    
   </body>

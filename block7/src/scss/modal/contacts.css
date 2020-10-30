@@ -1,17 +1,31 @@
+
+.modal-contact__screen {
+    z-index: 9;
+    position: fixed;
+    background-color: rgba(255,255,255,0.9);
+    right:0;
+    top:0;
+    width:100vw;
+    height:100vh;
+}
+
+
 .modal-contact {
     z-index: 10;
-position:relative;
-box-sizing: border-box;
-width:440px;
-height: 100vh;
-font-family: TT Lakes;
-font-size: 14px;
-line-height: 24px;
-text-align: left;
-color: #7E7E82;
-border-left:1px solid #D9FFF5;
-padding:0;
-background-color: #FFF;
+    position:fixed;
+    box-sizing: border-box;
+    width:440px;
+    height: 100vh;
+    font-family: TT Lakes;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: #7E7E82;
+    border-left:1px solid #D9FFF5;
+    padding:0;
+    background-color: #FFF;
+    right:0;
+    top:0;
 }
 
 @media (min-width: 120px) and (max-width: 767px) {
@@ -26,8 +40,8 @@ margin-top: 96px;
 
 .modal-contacts-button-close {    
     position: absolute;
-    top:-72px;
-    
+        top:24px;
+        left:16px;
 }
 }
 
@@ -42,8 +56,8 @@ width:440px;
 
 .modal-contacts-button-close {    
     position: absolute;
-    top:-6px;
-    left:-10px;
+    top:24px;
+    left:-72px;  
 }
 }
 
@@ -159,6 +173,11 @@ background-image:url("./images/form_submit.svg");
 .modal-contact__hidden {
 display:none;
 }
+
+.modal-contact__screen_hidden {
+display:none;
+}
+
 
 
 

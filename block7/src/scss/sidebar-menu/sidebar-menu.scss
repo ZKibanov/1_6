@@ -8,13 +8,12 @@ li {
 }
 
 .sidebar-menu-body {
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
-    z-index: 100;
+    z-index: 8;
     margin: 0;
-    padding: 0;
-    height: 1vh;
+    height: 100vh;
 }
 
 .sidebar-menu-body--hidden {
@@ -55,7 +54,7 @@ visibility: hidden;
 @media (min-width: 20px) and (max-width: 767px) {
 
     .sidebar-menu-body {
-        z-index:10;
+        z-index:8;
         width: 100%;
     }
 
@@ -69,6 +68,8 @@ visibility: hidden;
 
     .sidebar-menu-body {
             width: 320px;
+            height:100vh;
+            box-sizing: border-box;
         }
     }
 
@@ -76,15 +77,29 @@ visibility: hidden;
         padding: 0 16px;
         display: block;
     }
+
+    .sidebar-menu--blur.visible {
+        filter: blur(15px);
+        z-index: 7;
+        position: fixed;
+        background-color: rgba(255,255,255,0.9);
+        right:0;
+        top:0;
+        width:100vw;
+        height:101vh;
+        transition-duration: 0.8s;
+    }
     
     
 @media (min-width: 1440px) {
+
 .sidebar-menu-body {
     position:absolute;
     width: 320px;
     top:0;
     left:0;
     box-shadow:none;
+    padding: 50px 0 0 0;
     }
     
     .sidebar-menu-body--hidden {
@@ -95,6 +110,27 @@ visibility: hidden;
         visibility: visible;
         }
 
+        .menu__item {
+            position: relative;
+        }
+        .menu__link--active {
+            opacity:0.5;
+        }
+    
+        .menu__link--active::after{
+            opacity: 1;
+            content: 'a';
+            font-size: 0;
+            min-height: 40px;
+            min-width:5px;
+            position: absolute;
+            top:-10px;
+            left: -16px;
+            background-image: url("../img/highlight.svg");
+            background-repeat: no-repeat;
+            background-position: left center;
+
+        }
 
 .sidebar-menu-btn.button--close.button {
 display:none;
@@ -171,22 +207,14 @@ display:none;
     transition: all 0.8s ease;
 }
 
-/*
-.menu__link_chosen {
-    background-image: url("./images/highlight.svg");
-    background-repeat: no-repeat;
-    background-position: center left;
-    margin: -16px;
-    padding: 16px;
+.menu__link--active:hover {
+    opacity:1;
+    transition: all 0.8s ease;
 }
- */
 
 .chosen {
     filter: opacity(50%);
 }
-
-
-
 
 .button--phone {
     background-image: url("../img/phone.svg");
@@ -248,10 +276,6 @@ display:none;
     margin-left: 16px;
 }
 
-sidebar-menu-logo__link {
+.sidebar-menu-logo__link {
     display: block;
 }
-
-
-
-

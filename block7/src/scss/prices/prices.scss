@@ -1,3 +1,8 @@
+$headerAndMenus:#F2F2F2;
+$footer:#7E7E82;
+$borders:#D9FFF5;
+
+
 * {
     margin:0;
     padding:0;
@@ -31,10 +36,10 @@ img {
 .brands-list__header {
     display:flex;
     justify-content: flex-start;
-    color:#7E7E82;
+    color:$footer;
     background-image: linear-gradient( to right,#F2F2F2, #FFF);
     width: 100%;
-    border-top: 1px solid #D9FFF5;
+    border-top: 1px solid $borders;
     padding:16px;
 
 }
@@ -71,11 +76,11 @@ img {
     }
 
     .swiper-container {
-        width:460px;
+        width:90vw;
         height:256px;
         padding: 0;
         position: relative;
-        margin-left:16px;
+        margin:0 auto;
     }
 
     .swiper-pagination-bullet {
@@ -91,6 +96,8 @@ img {
         display: block;
         box-sizing: border-box;
         margin: 0;
+        min-width:220px;
+        max-width:220px;
     }
 
     .price-list__item {
@@ -245,7 +252,7 @@ img {
 }
 
 .tech-list__item {
-    width: 250px;
+    width: 240px;
         display: block;
         box-sizing: border-box;
         margin: 0;
