@@ -1,6 +1,3 @@
 function openMenu(Menu) {
-		this.el.classList.toggle('opened')
-  };
-
-
-
+  this.el.classList.toggle("opened");
+}
